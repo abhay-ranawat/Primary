@@ -1,0 +1,197 @@
+body {
+  width: 230mm;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 12pt;
+  background: rgb(204, 204, 204);
+}
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.main-page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+.sub-page {
+  padding: 1cm;
+  height: 297mm;
+}
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+  .main-page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}
+
+.bor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid black;
+  font-weight: normal;
+}
+
+.mainTitle {
+  font-size: 35pt;
+  text-align: center;
+}
+
+.subTitle {
+  font-size: 10pt;
+  text-align: center;
+  font-weight: 500;
+}
+
+.noSpace {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.noSpaceBottom {
+  margin-bottom: 0.1cm;
+}
+
+.box {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.boxText {
+  margin-bottom: 0.05cm;
+  margin-top: 0.05cm;
+}
+
+.secondLayer {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid black;
+}
+
+.secondLayerOne {
+  width: 70%;
+  border-right: 1px solid black;
+  padding: 10px;
+}
+
+.secondLayerTwo {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 10px;
+}
+
+.numberLayer {
+  margin-bottom: 0.1cm;
+}
+.dateLayer {
+  margin-top: 0.1cm;
+}
+
+.motto {
+  margin-top: 0.2cm;
+  text-align: center;
+}
+
+.ThirdLayerOne {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid black;
+  padding: 0%;
+  margin: 0cm;
+}
+
+.x1 {
+  width: 10%;
+  border-right: 1px solid black;
+}
+.x2 {
+  width: 40%;
+  border-right: 1px solid black;
+}
+.x3 {
+  width: 10%;
+  border-right: 1px solid black;
+}
+.x4 {
+  width: 10%;
+  border-right: 1px solid black;
+}
+.x5 {
+  width: 13%;
+  border-right: 1px solid black;
+}
+.x6 {
+  width: 17%;
+}
+
+.x {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 5px;
+  text-align: center;
+}
+
+.ThirdLayerTwo {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid black;
+  padding: 0%;
+  margin: 0cm;
+  height: 8cm;
+}
+
+.FourthLayer {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid black;
+  padding: 0%;
+  margin: 0cm;
+  height: 1cm;
+}
+
+.y1 {
+  width: 70%;
+  border-right: 1px solid black;
+  /* reduce size to 15px if two lines */
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.y2 {
+  width: 13%;
+  border-right: 1px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+.y3 {
+  width: 17%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.y {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 5px;
+}
